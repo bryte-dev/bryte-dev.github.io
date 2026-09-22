@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milian Bryte | Portfolio</title>
+  <meta
+    name="description"
+    content="Modern portfolio website for Milian Bryte featuring software, audio, and product-oriented projects."
+  >
+  <script>document.documentElement.classList.add('has-js');</script>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#top">Milian Bryte</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section reveal">
+        <div class="hero-copy">
+          <p class="eyebrow">Software developer · product-minded builder · audio tech enthusiast</p>
+          <h1>Building modern digital experiences with code, sound, and strong product thinking.</h1>
+          <p class="hero-text">
+            I design and ship polished applications across web, desktop, and AI-assisted workflows —
+            with a focus on clarity, usability, and real-world value.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-secondary" href="https://github.com/bryte-dev" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button button-secondary" href="mailto:milian.bryte@gmail.com">Email</a>
+            <a
+              class="button button-ghost is-disabled"
+              href="assets/Milian-CV.pdf"
+              download
+              aria-disabled="true"
+              onclick="return false;"
+            >
+              CV Placeholder
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-panel glass-card">
+          <p class="panel-label">Current focus</p>
+          <ul class="hero-highlights">
+            <li>Real-time audio tooling and desktop apps</li>
+            <li>AI-enhanced interactive products</li>
+            <li>Clean frontend experiences with strong UX</li>
+          </ul>
+          <div class="hero-metrics">
+            <div>
+              <strong>6</strong>
+              <span>featured builds</span>
+            </div>
+            <div>
+              <strong>Desktop + Web</strong>
+              <span>delivery range</span>
+            </div>
+            <div>
+              <strong>TPI</strong>
+              <span>music-tech specialization</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section reveal" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>Developer with a builder mindset</h2>
+        </div>
+        <div class="content-grid">
+          <article class="glass-card">
+            <p>
+              I enjoy creating products that combine solid engineering with a strong sense of user experience.
+              My work spans music technology, full-stack web apps, and local AI experiments.
+            </p>
+            <p>
+              Whether I am prototyping a real-time audio tool, shaping a discovery platform, or building a structured
+              app for musicians, I aim for clean architecture, clear interfaces, and practical outcomes.
+            </p>
+          </article>
+          <article class="glass-card">
+            <p class="list-title">What I bring</p>
+            <ul class="feature-list">
+              <li>Cross-disciplinary thinking between engineering, UX, and product</li>
+              <li>Hands-on experience with desktop apps, web platforms, and local AI tooling</li>
+              <li>Interest in interactive systems, media workflows, and polished interfaces</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Core stack and strengths</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="glass-card">
+            <h3>Languages & Frameworks</h3>
+            <div class="tag-list">
+              <span>C#</span>
+              <span>.NET</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>React</span>
+              <span>Electron</span>
+              <span>Python</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </article>
+          <article class="glass-card">
+            <h3>Audio & AI Tooling</h3>
+            <div class="tag-list">
+              <span>Avalonia</span>
+              <span>NAudio</span>
+              <span>NWaves</span>
+              <span>llama.cpp</span>
+              <span>GGUF</span>
+              <span>Real-time DSP</span>
+              <span>Note detection</span>
+            </div>
+          </article>
+          <article class="glass-card">
+            <h3>Product & Delivery</h3>
+            <div class="tag-list">
+              <span>Responsive UI</span>
+              <span>API design</span>
+              <span>PostgreSQL</span>
+              <span>Prisma</span>
+              <span>GitHub Pages</span>
+              <span>Prototyping</span>
+              <span>Product positioning</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Projects</p>
+          <h2>Selected work</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card glass-card">
+            <div class="project-preview">Project snapshot placeholder · add screenshot in <code>assets/</code> later</div>
+            <div class="project-meta">
+              <span class="status-badge">TPI Project</span>
+              <span class="status-text">Prototype</span>
+            </div>
+            <h3>SmartJam</h3>
+            <p>
+              Music-focused TPI project for real-time note detection, built to analyze incoming audio and surface usable
+              feedback for musicians in a responsive desktop workflow.
+            </p>
+            <div class="tag-list">
+              <span>C#</span>
+              <span>.NET</span>
+              <span>Avalonia</span>
+              <span>NAudio</span>
+              <span>NWaves</span>
+            </div>
+            <a class="project-link" href="https://github.com/bryte-dev" target="_blank" rel="noreferrer">GitHub placeholder ↗</a>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-preview">Project snapshot placeholder · add screenshot in <code>assets/</code> later</div>
+            <div class="project-meta">
+              <span class="status-badge">Released</span>
+              <span class="status-text">Desktop app</span>
+            </div>
+            <h3>AudioBlocks</h3>
+            <p>
+              Real-time virtual pedalboard designed for musicians who want accessible desktop audio processing with a
+              modern interface and practical release-ready packaging.
+            </p>
+            <div class="tag-list">
+              <span>C#</span>
+              <span>.NET</span>
+              <span>Avalonia</span>
+              <span>NAudio</span>
+              <span>itch.io</span>
+            </div>
+            <a class="project-link" href="https://github.com/bryte-dev" target="_blank" rel="noreferrer">GitHub placeholder ↗</a>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-preview">Project snapshot placeholder · add screenshot in <code>assets/</code> later</div>
+            <div class="project-meta">
+              <span class="status-badge">In Progress</span>
+              <span class="status-text">Local AI app</span>
+            </div>
+            <h3>EnigmAI</h3>
+            <p>
+              Electron + React + Python application that generates riddles locally using llama.cpp and a GGUF model,
+              exploring lightweight AI experiences without relying on external services.
+            </p>
+            <div class="tag-list">
+              <span>Electron</span>
+              <span>React</span>
+              <span>Python</span>
+              <span>llama.cpp</span>
+              <span>GGUF</span>
+            </div>
+            <a class="project-link" href="https://github.com/bryte-dev" target="_blank" rel="noreferrer">GitHub placeholder ↗</a>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-preview">Product concept placeholder · add visuals in <code>assets/</code> later</div>
+            <div class="project-meta">
+              <span class="status-badge">Concept</span>
+              <span class="status-text">Product / marketing led</span>
+            </div>
+            <h3>CityPulse</h3>
+            <p>
+              Event discovery platform concept focused on surfacing the right local experiences with stronger messaging,
+              audience targeting, and a product strategy mindset.
+            </p>
+            <div class="tag-list">
+              <span>Product strategy</span>
+              <span>Discovery UX</span>
+              <span>Web platform</span>
+              <span>Marketing angle</span>
+            </div>
+            <a class="project-link" href="https://github.com/bryte-dev" target="_blank" rel="noreferrer">GitHub placeholder ↗</a>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-preview">Product concept placeholder · add visuals in <code>assets/</code> later</div>
+            <div class="project-meta">
+              <span class="status-badge">Prototype</span>
+              <span class="status-text">Web product</span>
+            </div>
+            <h3>FlixMatch</h3>
+            <p>
+              Movie discovery and watchlist platform concept built around helping users browse, compare, and organize
+              what to watch next through a cleaner entertainment decision flow.
+            </p>
+            <div class="tag-list">
+              <span>Frontend UX</span>
+              <span>Discovery flows</span>
+              <span>Watchlist features</span>
+              <span>Product design</span>
+            </div>
+            <a class="project-link" href="https://github.com/bryte-dev" target="_blank" rel="noreferrer">GitHub placeholder ↗</a>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-preview">Project snapshot placeholder · add screenshot in <code>assets/</code> later</div>
+            <div class="project-meta">
+              <span class="status-badge">In Progress</span>
+              <span class="status-text">Full-stack app</span>
+            </div>
+            <h3>JamLog</h3>
+            <p>
+              Backend + frontend application for musicians to organize projects, songs, events, and files in a more
+              structured way, with room for collaborative music workflows.
+            </p>
+            <div class="tag-list">
+              <span>Node.js</span>
+              <span>JavaScript</span>
+              <span>Express</span>
+              <span>PostgreSQL</span>
+              <span>Prisma</span>
+            </div>
+            <a class="project-link" href="https://github.com/bryte-dev/JamLog" target="_blank" rel="noreferrer">JamLog repo ↗</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Experience · Education · TPI</p>
+          <h2>Current trajectory</h2>
+        </div>
+        <div class="timeline">
+          <article class="glass-card timeline-item">
+            <p class="timeline-label">TPI</p>
+            <h3>SmartJam</h3>
+            <p>
+              Developed as a final project centered on real-time audio analysis and note detection, combining music
+              technology interests with practical desktop application development.
+            </p>
+          </article>
+          <article class="glass-card timeline-item">
+            <p class="timeline-label">Applied development</p>
+            <h3>Audio-driven desktop tooling</h3>
+            <p>
+              Built projects such as AudioBlocks to explore responsive audio workflows, signal handling, and software
+              packaging for musician-facing tools.
+            </p>
+          </article>
+          <article class="glass-card timeline-item">
+            <p class="timeline-label">Product exploration</p>
+            <h3>Web and AI product concepts</h3>
+            <p>
+              Expanded into discovery platforms and local AI experiences through projects like CityPulse, FlixMatch,
+              EnigmAI, and JamLog.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build something useful</h2>
+        </div>
+        <div class="content-grid">
+          <article class="glass-card">
+            <p>
+              I’m interested in software engineering, product-minded development, audio technology, and creative
+              technical projects. Feel free to reach out for opportunities, collaborations, or portfolio feedback.
+            </p>
+            <div class="contact-actions">
+              <a class="button button-primary" href="mailto:milian.bryte@gmail.com">Email me</a>
+              <a class="button button-secondary" href="https://github.com/bryte-dev" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="button button-ghost" href="#" aria-disabled="true" onclick="return false;">LinkedIn placeholder</a>
+            </div>
+          </article>
+          <article class="glass-card">
+            <p class="list-title">Quick customization checklist</p>
+            <ul class="feature-list">
+              <li>Replace placeholder project links with direct repositories or demos</li>
+              <li>Add screenshots to <code>assets/</code> and swap placeholder preview text</li>
+              <li>Drop in <code>assets/Milian-CV.pdf</code> when the CV is ready</li>
+              <li>Update the LinkedIn button with the final profile URL</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="current-year"></span> Milian Bryte. Built for GitHub Pages.</p>
+    </footer>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
