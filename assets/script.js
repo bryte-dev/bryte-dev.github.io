@@ -21,7 +21,11 @@ if (navToggle && navLinks) {
   });
 }
 
-if ("IntersectionObserver" in window) {
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (prefersReducedMotion) {
+  revealElements.forEach((element) => element.classList.add("is-visible"));
+} else if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
