@@ -34,7 +34,15 @@ if ("IntersectionObserver" in window) {
     { threshold: 0.12 }
   );
 
-  revealElements.forEach((element) => observer.observe(element));
+  revealElements.forEach((element) => {
+    const { top } = element.getBoundingClientRect();
+    if (top < window.innerHeight * 0.92) {
+      element.classList.add("is-visible");
+      return;
+    }
+
+    observer.observe(element);
+  });
 } else {
   revealElements.forEach((element) => element.classList.add("is-visible"));
 }

@@ -47,7 +47,7 @@ code {
 
 .page-shell {
   position: relative;
-  overflow: clip;
+  overflow: hidden;
 }
 
 .page-shell::before,
@@ -261,9 +261,9 @@ p {
 }
 
 .button-ghost.is-disabled,
-.button[aria-disabled="true"] {
+.button:disabled {
   opacity: 0.68;
-  cursor: default;
+  cursor: not-allowed;
 }
 
 .glass-card {
