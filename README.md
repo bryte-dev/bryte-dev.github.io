@@ -19,9 +19,9 @@ The site is intentionally simple: plain HTML, CSS, and JavaScript so it can be p
 
 Main edit points:
 
-- Update text content directly in `/home/runner/work/bryte-dev.github.io/bryte-dev.github.io/index.html`
-- Tweak colors, spacing, and layout in `/home/runner/work/bryte-dev.github.io/bryte-dev.github.io/assets/styles.css`
-- Adjust interactions in `/home/runner/work/bryte-dev.github.io/bryte-dev.github.io/assets/script.js`
+- Update text content directly in `index.html`
+- Tweak colors, spacing, and layout in `assets/styles.css`
+- Adjust interactions in `assets/script.js`
 
 ### Useful content placeholders
 
