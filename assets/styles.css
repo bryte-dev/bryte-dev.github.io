@@ -20,10 +20,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   min-width: 320px;
@@ -417,6 +413,33 @@ p {
 .has-js .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .button:hover,
+  .button:focus-visible,
+  .project-card:hover,
+  .project-card:focus-within,
+  .glass-card:hover,
+  .has-js .reveal,
+  .has-js .reveal.is-visible {
+    transform: none;
+  }
 }
 
 @media (max-width: 900px) {
