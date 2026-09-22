@@ -454,6 +454,7 @@ p {
 @media (max-width: 720px) {
   .nav {
     min-height: 4.3rem;
+    position: relative;
   }
 
   .nav-toggle {
