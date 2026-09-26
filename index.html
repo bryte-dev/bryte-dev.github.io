@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Milian Bryte | Portfolio</title>
+  <title>Milian Joaquim | Portfolio</title>
   <meta
     name="description"
-    content="Modern portfolio website for Milian Bryte featuring software, audio, and product-oriented projects."
+    content="Software developer specializing in web, audio, and AI. CPNE graduate with technical maturity (TASV). Based in Switzerland."
   >
-  <script>document.documentElement.classList.add('has-js');</script>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -16,327 +15,265 @@
   <div class="page-shell">
     <header class="site-header">
       <nav class="nav">
-        <a class="brand" href="#top">Milian Bryte</a>
+        <a class="brand" href="#top">Milian Joaquim</a>
+        <div class="nav-spacer"></div>
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          <span id="langLabel">EN</span>
+        </button>
         <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
           <span></span>
           <span></span>
           <span></span>
-          <span class="sr-only">Toggle navigation</span>
         </button>
         <div class="nav-links" id="nav-links">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
+          <a href="#about" data-en="About" data-fr="À propos">About</a>
+          <a href="#skills" data-en="Skills" data-fr="Compétences">Skills</a>
+          <a href="#projects" data-en="Projects" data-fr="Projets">Projects</a>
+          <a href="#experience" data-en="Experience" data-fr="Expérience">Experience</a>
+          <a href="#contact" data-en="Contact" data-fr="Contact">Contact</a>
         </div>
       </nav>
     </header>
 
     <main>
+      <!-- HERO SECTION -->
       <section class="hero section reveal">
         <div class="hero-copy">
-          <p class="eyebrow">Software developer · product-minded builder · audio tech enthusiast</p>
-          <h1>Building modern digital experiences with code, sound, and strong product thinking.</h1>
-          <p class="hero-text">
-            I design and ship polished applications across web, desktop, and AI-assisted workflows —
-            with a focus on clarity, usability, and real-world value.
-          </p>
+          <p class="eyebrow" data-en="Software developer · web specialist · audio & AI enthusiast" data-fr="Développeur logiciel · spécialiste web · passionné par l'audio et l'IA"></p>
+          <h1 data-en="Building clean, functional, and thoughtful digital experiences." data-fr="Construire des expériences numériques propres, fonctionnelles et réfléchies."></h1>
+          <p class="hero-text" data-en="I design and ship applications across web, desktop, and emerging AI workflows. Strong focus on user clarity, performance, and real-world impact." data-fr="Je conçois et déploie des applications web, desktop et avec IA. Accent sur la clarté, la performance et l'impact réel."></p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-primary" href="#projects" data-en="View Projects" data-fr="Voir mes projets"></a>
             <a class="button button-secondary" href="https://github.com/bryte-dev" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a class="button button-secondary" href="mailto:milian.bryte@gmail.com">Email</a>
+            <a class="button button-secondary" href="mailto:milian.joaquim@hotmail.com">Email</a>
           </div>
-          <p class="placeholder-note">CV placeholder · add assets/Milian-CV.pdf</p>
         </div>
 
-        <aside class="hero-panel glass-card">
-          <p class="panel-label">Current focus</p>
-          <ul class="hero-highlights">
-            <li>Real-time audio tooling and desktop apps</li>
-            <li>AI-enhanced interactive products</li>
-            <li>Clean frontend experiences with strong UX</li>
-          </ul>
-          <div class="hero-metrics">
-            <div>
-              <strong>6</strong>
-              <span>featured builds</span>
-            </div>
-            <div>
-              <strong>Desktop + Web</strong>
-              <span>delivery range</span>
-            </div>
-            <div>
-              <strong>TPI</strong>
-              <span>music-tech specialization</span>
-            </div>
+        <aside class="hero-card glass-card">
+          <div class="hero-stat">
+            <span class="hero-value" id="ageValue">21</span>
+            <span class="hero-label" data-en="years old" data-fr="ans"></span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-value">🇨🇭</span>
+            <span class="hero-label" data-en="Based in Switzerland" data-fr="Basé en Suisse"></span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-value">🎓</span>
+            <span class="hero-label" data-en="CPNE graduate" data-fr="Diplômé CPNE"></span>
           </div>
         </aside>
       </section>
 
+      <!-- ABOUT SECTION -->
       <section class="section reveal" id="about">
         <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>Developer with a builder mindset</h2>
+          <p class="eyebrow" data-en="About" data-fr="À propos"></p>
+          <h2 data-en="Developer with depth across multiple domains" data-fr="Développeur polyvalent et profond"></h2>
         </div>
         <div class="content-grid">
           <article class="glass-card">
-            <p>
-              I enjoy creating products that combine solid engineering with a strong sense of user experience.
-              My work spans music technology, full-stack web apps, and local AI experiments.
-            </p>
-            <p>
-              Whether I am prototyping a real-time audio tool, shaping a discovery platform, or building a structured
-              app for musicians, I aim for clean architecture, clear interfaces, and practical outcomes.
-            </p>
+            <p data-en="I completed a 4-year vocational training program (CFC/CPNE) in Computer Science specializing in application development, with integrated technical maturity (TASV). I've since worked on diverse projects ranging from real-time audio processing to web platforms and local AI integrations." data-fr="J'ai complété une formation professionnelle de 4 ans (CFC/CPNE) en informatique spécialisée en développement d'applications, avec une maturité technique intégrée (TASV). Depuis, je travaille sur des projets variés allant du traitement audio temps-réel aux plateformes web et à l'intégration d'IA locale."></p>
           </article>
           <article class="glass-card">
-            <p class="list-title">What I bring</p>
+            <p class="list-title" data-en="Core strengths" data-fr="Forces principales"></p>
             <ul class="feature-list">
-              <li>Cross-disciplinary thinking between engineering, UX, and product</li>
-              <li>Hands-on experience with desktop apps, web platforms, and local AI tooling</li>
-              <li>Interest in interactive systems, media workflows, and polished interfaces</li>
+              <li data-en="Web development and responsive user interfaces" data-fr="Développement web et interfaces utilisateur responsives"></li>
+              <li data-en="Real-time audio processing and digital signal handling" data-fr="Traitement audio temps-réel et gestion de signaux numériques"></li>
+              <li data-en="Local AI experiments and product-thinking approach" data-fr="Expériences IA locale et approche orientée produit"></li>
             </ul>
           </article>
         </div>
       </section>
 
+      <!-- SKILLS SECTION -->
       <section class="section reveal" id="skills">
         <div class="section-heading">
-          <p class="eyebrow">Skills</p>
-          <h2>Core stack and strengths</h2>
+          <p class="eyebrow" data-en="Skills" data-fr="Compétences"></p>
+          <h2 data-en="Technical toolkit" data-fr="Boîte à outils technique"></h2>
         </div>
         <div class="skills-grid">
           <article class="glass-card">
-            <h3>Languages & Frameworks</h3>
+            <h3 data-en="Languages & Web" data-fr="Langages & Web"></h3>
             <div class="tag-list">
-              <span>C#</span>
-              <span>.NET</span>
               <span>JavaScript</span>
               <span>TypeScript</span>
               <span>React</span>
-              <span>Electron</span>
-              <span>Python</span>
-              <span>HTML</span>
-              <span>CSS</span>
+              <span>HTML/CSS</span>
+              <span>Node.js</span>
+              <span>Responsive Design</span>
             </div>
           </article>
           <article class="glass-card">
-            <h3>Audio & AI Tooling</h3>
+            <h3 data-en="Audio & DSP" data-fr="Audio & Traitement de signal"></h3>
             <div class="tag-list">
-              <span>Avalonia</span>
+              <span>C#</span>
+              <span>.NET</span>
               <span>NAudio</span>
-              <span>NWaves</span>
-              <span>llama.cpp</span>
-              <span>GGUF</span>
               <span>Real-time DSP</span>
-              <span>Note detection</span>
+              <span>Note Detection</span>
+              <span>Signal Processing</span>
             </div>
           </article>
           <article class="glass-card">
-            <h3>Product & Delivery</h3>
+            <h3 data-en="AI & Other" data-fr="IA & Autres"></h3>
             <div class="tag-list">
-              <span>Responsive UI</span>
-              <span>API design</span>
+              <span>Python</span>
+              <span>llama.cpp</span>
+              <span>Local LLM</span>
+              <span>Electron</span>
               <span>PostgreSQL</span>
-              <span>Prisma</span>
-              <span>GitHub Pages</span>
-              <span>Prototyping</span>
-              <span>Product positioning</span>
+              <span>Git/GitHub</span>
             </div>
           </article>
         </div>
       </section>
 
+      <!-- PROJECTS SECTION -->
       <section class="section reveal" id="projects">
         <div class="section-heading">
-          <p class="eyebrow">Featured Projects</p>
-          <h2>Selected work</h2>
+          <p class="eyebrow" data-en="Featured Projects" data-fr="Projets en vedette"></p>
+          <h2 data-en="Selected work" data-fr="Travaux sélectionnés"></h2>
         </div>
         <div class="projects-grid">
-          <article class="project-card glass-card">
-            <div class="project-preview">Project snapshot placeholder · add screenshot in <code>assets/</code> later</div>
-            <div class="project-meta">
-              <span class="status-badge">TPI Project</span>
-              <span class="status-text">Prototype</span>
+          <!-- SmartJam -->
+          <article class="project-card glass-card" data-project="smartjam">
+            <div class="project-header">
+              <h3>SmartJam</h3>
+              <span class="status-badge">TPI</span>
             </div>
-            <h3>SmartJam</h3>
-            <p>
-              Music-focused TPI project for real-time note detection, built to analyze incoming audio and surface usable
-              feedback for musicians in a responsive desktop workflow.
-            </p>
+            <p class="project-snippet" data-en="Real-time pitch detection for musicians." data-fr="Détection de hauteur temps-réel pour musiciens."></p>
+            <div class="tag-list">
+              <span>C#</span>
+              <span>.NET</span>
+              <span>Real-time Audio</span>
+            </div>
+            <button class="project-expand" data-en="Learn more →" data-fr="En savoir plus →"></button>
+          </article>
+
+          <!-- AudioBlocks -->
+          <article class="project-card glass-card" data-project="audioblocks">
+            <div class="project-header">
+              <h3>AudioBlocks</h3>
+              <span class="status-badge released">Released</span>
+            </div>
+            <p class="project-snippet" data-en="Virtual pedalboard with real-time effects and recording." data-fr="Pédalier virtuel avec effets temps-réel et enregistrement."></p>
             <div class="tag-list">
               <span>C#</span>
               <span>.NET</span>
               <span>Avalonia</span>
-              <span>NAudio</span>
-              <span>NWaves</span>
             </div>
-            <a class="project-link" href="https://github.com/bryte-dev" target="_blank" rel="noopener noreferrer">GitHub placeholder ↗</a>
+            <button class="project-expand" data-en="Learn more →" data-fr="En savoir plus →"></button>
           </article>
 
-          <article class="project-card glass-card">
-            <div class="project-preview">Project snapshot placeholder · add screenshot in <code>assets/</code> later</div>
-            <div class="project-meta">
-              <span class="status-badge">Released</span>
-              <span class="status-text">Desktop app</span>
+          <!-- EnigmAI -->
+          <article class="project-card glass-card" data-project="enigmai">
+            <div class="project-header">
+              <h3>EnigmAI</h3>
+              <span class="status-badge">AI</span>
             </div>
-            <h3>AudioBlocks</h3>
-            <p>
-              Real-time virtual pedalboard designed for musicians who want accessible desktop audio processing with a
-              modern interface and practical release-ready packaging.
-            </p>
-            <div class="tag-list">
-              <span>C#</span>
-              <span>.NET</span>
-              <span>Avalonia</span>
-              <span>NAudio</span>
-              <span>itch.io</span>
-            </div>
-            <a class="project-link" href="https://github.com/bryte-dev" target="_blank" rel="noopener noreferrer">GitHub placeholder ↗</a>
-          </article>
-
-          <article class="project-card glass-card">
-            <div class="project-preview">Project snapshot placeholder · add screenshot in <code>assets/</code> later</div>
-            <div class="project-meta">
-              <span class="status-badge">In Progress</span>
-              <span class="status-text">Local AI app</span>
-            </div>
-            <h3>EnigmAI</h3>
-            <p>
-              Electron + React + Python application that generates riddles locally using llama.cpp and a GGUF model,
-              exploring lightweight AI experiences without relying on external services.
-            </p>
+            <p class="project-snippet" data-en="Riddle game with local LLM generation via llama.cpp." data-fr="Jeu d'énigmes avec génération LLM locale."></p>
             <div class="tag-list">
               <span>Electron</span>
               <span>React</span>
               <span>Python</span>
-              <span>llama.cpp</span>
-              <span>GGUF</span>
             </div>
-            <a class="project-link" href="https://github.com/bryte-dev" target="_blank" rel="noopener noreferrer">GitHub placeholder ↗</a>
+            <button class="project-expand" data-en="Learn more →" data-fr="En savoir plus →"></button>
           </article>
 
-          <article class="project-card glass-card">
-            <div class="project-preview">Product concept placeholder · add visuals in <code>assets/</code> later</div>
-            <div class="project-meta">
-              <span class="status-badge">Concept</span>
-              <span class="status-text">Product / marketing led</span>
+          <!-- CityPulse -->
+          <article class="project-card glass-card" data-project="citypulse">
+            <div class="project-header">
+              <h3>CityPulse</h3>
+              <span class="status-badge">Web</span>
             </div>
-            <h3>CityPulse</h3>
-            <p>
-              Event discovery platform concept focused on surfacing the right local experiences with stronger messaging,
-              audience targeting, and a product strategy mindset.
-            </p>
+            <p class="project-snippet" data-en="Event discovery platform with product-first thinking." data-fr="Plateforme de découverte d'événements orientée produit."></p>
             <div class="tag-list">
-              <span>Product strategy</span>
-              <span>Discovery UX</span>
-              <span>Web platform</span>
-              <span>Marketing angle</span>
+              <span>TypeScript</span>
+              <span>React</span>
+              <span>Product Design</span>
             </div>
-            <a class="project-link" href="https://github.com/bryte-dev" target="_blank" rel="noopener noreferrer">GitHub placeholder ↗</a>
+            <button class="project-expand" data-en="Learn more →" data-fr="En savoir plus →"></button>
           </article>
 
-          <article class="project-card glass-card">
-            <div class="project-preview">Product concept placeholder · add visuals in <code>assets/</code> later</div>
-            <div class="project-meta">
-              <span class="status-badge">Prototype</span>
-              <span class="status-text">Web product</span>
+          <!-- FlixMatch -->
+          <article class="project-card glass-card" data-project="flixmatch">
+            <div class="project-header">
+              <h3>FlixMatch</h3>
+              <span class="status-badge">Web</span>
             </div>
-            <h3>FlixMatch</h3>
-            <p>
-              Movie discovery and watchlist platform concept built around helping users browse, compare, and organize
-              what to watch next through a cleaner entertainment decision flow.
-            </p>
+            <p class="project-snippet" data-en="Movie discovery and watchlist platform." data-fr="Plateforme de découverte et listes de films."></p>
             <div class="tag-list">
-              <span>Frontend UX</span>
-              <span>Discovery flows</span>
-              <span>Watchlist features</span>
-              <span>Product design</span>
+              <span>React</span>
+              <span>Full-stack</span>
+              <span>UX Design</span>
             </div>
-            <a class="project-link" href="https://github.com/bryte-dev" target="_blank" rel="noopener noreferrer">GitHub placeholder ↗</a>
+            <button class="project-expand" data-en="Learn more →" data-fr="En savoir plus →"></button>
           </article>
 
-          <article class="project-card glass-card">
-            <div class="project-preview">Project snapshot placeholder · add screenshot in <code>assets/</code> later</div>
-            <div class="project-meta">
-              <span class="status-badge">In Progress</span>
-              <span class="status-text">Full-stack app</span>
+          <!-- JamLog -->
+          <article class="project-card glass-card" data-project="jamlog">
+            <div class="project-header">
+              <h3>JamLog</h3>
+              <span class="status-badge">Full-stack</span>
             </div>
-            <h3>JamLog</h3>
-            <p>
-              Backend + frontend application for musicians to organize projects, songs, events, and files in a more
-              structured way, with room for collaborative music workflows.
-            </p>
+            <p class="project-snippet" data-en="Music project manager for musicians and bands." data-fr="Gestionnaire de projets musicaux pour musiciens."></p>
             <div class="tag-list">
               <span>Node.js</span>
-              <span>JavaScript</span>
-              <span>Express</span>
+              <span>React Native</span>
               <span>PostgreSQL</span>
-              <span>Prisma</span>
             </div>
-            <a class="project-link" href="https://github.com/bryte-dev/JamLog" target="_blank" rel="noopener noreferrer">JamLog repo ↗</a>
+            <button class="project-expand" data-en="Learn more →" data-fr="En savoir plus →"></button>
           </article>
         </div>
       </section>
 
+      <!-- EXPERIENCE SECTION -->
       <section class="section reveal" id="experience">
         <div class="section-heading">
-          <p class="eyebrow">Experience · Education · TPI</p>
-          <h2>Current trajectory</h2>
+          <p class="eyebrow" data-en="Formation & Path" data-fr="Formation & Parcours"></p>
+          <h2 data-en="Education and specialization" data-fr="Éducation et spécialisation"></h2>
         </div>
         <div class="timeline">
           <article class="glass-card timeline-item">
-            <p class="timeline-label">TPI</p>
-            <h3>SmartJam</h3>
-            <p>
-              Developed as a final project centered on real-time audio analysis and note detection, combining music
-              technology interests with practical desktop application development.
-            </p>
+            <p class="timeline-label" data-en="2021 – 2025" data-fr="2021 – 2025"></p>
+            <h3 data-en="CFC/CPNE in Computer Science" data-fr="CFC/CPNE en informatique"></h3>
+            <p data-en="4-year vocational training with specialization in application development and integrated technical maturity (TASV). Covers systems, databases, security, and advanced software engineering." data-fr="Formation professionnelle de 4 ans en développement d'applications avec maturité technique intégrée. Couvre systèmes, bases de données, sécurité et ingénierie logicielle avancée."></p>
           </article>
           <article class="glass-card timeline-item">
-            <p class="timeline-label">Applied development</p>
-            <h3>Audio-driven desktop tooling</h3>
-            <p>
-              Built projects such as AudioBlocks to explore responsive audio workflows, signal handling, and software
-              packaging for musician-facing tools.
-            </p>
+            <p class="timeline-label" data-en="2023 – 2024" data-fr="2023 – 2024"></p>
+            <h3 data-en="TPI: SmartJam" data-fr="TPI : SmartJam"></h3>
+            <p data-en="Capstone project focused on real-time audio analysis, signal processing, and desktop application development. Demonstrates advanced technical depth in music technology." data-fr="Projet de fin d'études centré sur l'analyse audio temps-réel et le traitement de signaux. Démontre la profondeur technique en technologie musicale."></p>
           </article>
           <article class="glass-card timeline-item">
-            <p class="timeline-label">Product exploration</p>
-            <h3>Web and AI product concepts</h3>
-            <p>
-              Expanded into discovery platforms and local AI experiences through projects like CityPulse, FlixMatch,
-              EnigmAI, and JamLog.
-            </p>
+            <p class="timeline-label" data-en="2023 – Present" data-fr="2023 – Présent"></p>
+            <h3 data-en="Full-stack & AI exploration" data-fr="Exploration full-stack et IA"></h3>
+            <p data-en="Continued development of diverse projects spanning web platforms, local AI integrations, music software, and product-oriented design. Building practical, usable tools across multiple domains." data-fr="Développement continu de projets variés incluant plateformes web, IA locale, logiciels musicaux et design orienté produit."></p>
           </article>
         </div>
       </section>
 
+      <!-- CONTACT SECTION -->
       <section class="section reveal" id="contact">
         <div class="section-heading">
-          <p class="eyebrow">Contact</p>
-          <h2>Let’s build something useful</h2>
+          <p class="eyebrow" data-en="Contact" data-fr="Contact"></p>
+          <h2 data-en="Let's collaborate" data-fr="Collaborons"></h2>
         </div>
         <div class="content-grid">
           <article class="glass-card">
-            <p>
-              I’m interested in software engineering, product-minded development, audio technology, and creative
-              technical projects. Feel free to reach out for opportunities, collaborations, or portfolio feedback.
-            </p>
+            <p data-en="I'm open to discussing software projects, audio technology, product ideas, or career opportunities. Reach out via email or GitHub." data-fr="Je suis ouvert aux discussions sur des projets logiciels, l'audio, les idées de produits ou les opportunités de carrière."></p>
             <div class="contact-actions">
-              <a class="button button-primary" href="mailto:milian.bryte@gmail.com">Email me</a>
+              <a class="button button-primary" href="mailto:milian.joaquim@hotmail.com" data-en="Email me" data-fr="M'envoyer un email"></a>
               <a class="button button-secondary" href="https://github.com/bryte-dev" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
-            <p class="placeholder-note">LinkedIn placeholder</p>
           </article>
           <article class="glass-card">
-            <p class="list-title">Quick customization checklist</p>
+            <p class="list-title" data-en="Quick info" data-fr="Infos rapides"></p>
             <ul class="feature-list">
-              <li>Replace placeholder project links with direct repositories or demos</li>
-              <li>Add screenshots to <code>assets/</code> and swap placeholder preview text</li>
-              <li>Drop in <code>assets/Milian-CV.pdf</code> when the CV is ready</li>
-              <li>Update the LinkedIn button with the final profile URL</li>
+              <li><strong data-en="Location" data-fr="Localisation"></strong>: <span data-en="Valais, Switzerland" data-fr="Valais, Suisse"></span></li>
+              <li><strong data-en="Languages" data-fr="Langues"></strong>: <span>Français, English</span></li>
+              <li><strong data-en="Email" data-fr="Email"></strong>: <span>milian.joaquim@hotmail.com</span></li>
+              <li><strong data-en="GitHub" data-fr="GitHub"></strong>: <span>github.com/bryte-dev</span></li>
             </ul>
           </article>
         </div>
@@ -344,8 +281,19 @@
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="current-year"></span> Milian Bryte. Built for GitHub Pages.</p>
+      <p data-en="© 2025 Milian Joaquim. Built with clean code and fresh coffee." data-fr="© 2025 Milian Joaquim. Construit avec du code propre et du bon café."></p>
     </footer>
+  </div>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal" id="projectModal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content glass-card">
+      <button class="modal-close" aria-label="Close modal">×</button>
+      <div class="modal-body">
+        <!-- Populated by JS -->
+      </div>
+    </div>
   </div>
 
   <script src="assets/script.js"></script>
