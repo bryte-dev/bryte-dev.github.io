@@ -88,6 +88,15 @@ function updateLanguage() {
     const value = element.dataset[currentLanguage];
     if (value !== undefined) element.textContent = value;
   });
+
+  // Update resume link based on language
+  const resumeButton = document.querySelector("#resumeButton");
+  if (resumeButton) {
+    const hrefKey = currentLanguage === "en" ? "enHref" : "frHref";
+    const href = resumeButton.dataset[hrefKey];
+    if (href) resumeButton.setAttribute("href", href);
+  }
+
   if (langLabel) langLabel.textContent = currentLanguage === "en" ? "FR" : "EN";
   if (langToggle) langToggle.setAttribute("aria-label", currentLanguage === "en" ? "Passer en français" : "Switch to English");
   localStorage.setItem("portfolio-language", currentLanguage);
